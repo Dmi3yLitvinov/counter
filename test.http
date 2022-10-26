@@ -1,0 +1,18 @@
+POST localhost:8080/counter
+Content-Type: application/json
+
+{
+  "name": "counter"
+}
+
+###
+POST localhost:8080/counter/increment?name=counter
+###
+GET localhost:8080/counter?name=counter
+###
+GET localhost:8080/counter/sum
+###
+GET localhost:8080/counter/names
+###
+DELETE localhost:8080/counter?name=counter
+
